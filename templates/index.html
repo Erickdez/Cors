@@ -14,16 +14,16 @@
 
     <div class="container">
         <div name="linkers" class="container">
-            <a href="#">admin</a>
-            <a href="#">about</a>
+            <a href="#" onclick="hideDivById('admin')">admin</a>
+            <a href="#" onclick="hideDivById('about')">about</a>
         </div>
 
         <div class="main">
             <p>carga dinamica de paginas</p>
 
             <!-- here we are going to add the pages -->
-            <div id="admin" name="w3includes" w3-include-html="http://localhost:5000/admin"></div>
-            <div id="about" name="w3includes" w3-include-html="http://localhost:5000/about"></div>
+            <div style="display:none" id="admin" name="w3includes" w3-include-html="http://localhost:5000/admin"></div>
+            <div style="display:none" id="about" name="w3includes" w3-include-html="http://localhost:5000/about"></div>
         </div>
     </div>
 
