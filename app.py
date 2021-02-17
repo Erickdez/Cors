@@ -21,5 +21,10 @@ def about():
     return render_template("about.html")
 
 
+@app.route("/sum")
+def sum():
+    return render_template("sum.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
